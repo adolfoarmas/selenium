@@ -75,7 +75,7 @@ class NoSuchElementException(WebDriverException):
     def __init__(
         self, msg: Optional[str] = None, screen: Optional[str] = None, stacktrace: Optional[Sequence[str]] = None
     ) -> None:
-        with_support = f"{msg}; {SUPPORT_MSG} {ERROR_URL}#no-such-element-exception"
+        with_support = f"{msg}; {SUPPORT_MSG} {ERROR_URL}#nosuchelementexception"
 
         super().__init__(with_support, screen, stacktrace)
 
